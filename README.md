@@ -30,8 +30,7 @@ To set up StudySync locally, follow these steps:
    ```
 
 2. **Set Up Environment Variables**:
-   - Create a `.env` files in each direcoty
-   - Message me if you are missing them
+   - Create a `.env` file in each direcoty
 
 3. **Install Dependencies**:
    - **Backend**:
