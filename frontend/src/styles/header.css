@@ -1,0 +1,42 @@
+.header-container {
+  flex-grow: 1;
+}
+
+.app-bar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #3f51b5;
+}
+
+.signin-button {
+  margin-left: 16px;
+  transition: all 0.3s ease;
+}
+
+.signin-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(63, 81, 181, 0.2);
+}
+
+.menu-button {
+  color: #333;
+}
+

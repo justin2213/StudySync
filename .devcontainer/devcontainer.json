@@ -1,0 +1,19 @@
+{
+  "name": "DevContainer",
+  // "dockerComposeFile": "../docker-compose.yml",
+  "service": "backend", // or "frontend", depending on which one you want to work in
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esben.prettier-vscode",
+        "ms-vscode.vscode-typescript-tslint-plugin"
+      ],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  },
+  "shutdownAction": "stopCompose"
+}

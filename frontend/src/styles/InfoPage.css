@@ -1,0 +1,239 @@
+/* Main Styles */
+:root {
+  --primary-color: #4854b4;
+  --secondary-color: #6a70c8;
+  --accent-color: #ff006e;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+  --gradient-start: #4854b4;
+  --gradient-end: #6a70c8;
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.landing-page {
+  font-family: "Roboto", sans-serif;
+  color: var(--dark-color);
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: white;
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.company-name {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0 !important;
+  letter-spacing: -0.5px !important;
+}
+
+/* Header Container and Buttons */
+.header-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.header-button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.google-icon {
+  margin-left: 4px;
+}
+
+.home-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.home-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.login-button {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.login-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Section Styling */
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 1rem !important;
+  font-weight: 600 !important;
+  color: var(--dark-color);
+}
+
+.section-divider {
+  width: 80px;
+  height: 4px !important;
+  background-color: var(--primary-color) !important;
+  margin: 0 auto 40px !important;
+}
+
+/* Creators Section */
+.creators-grid {
+  margin-top: 20px;
+}
+
+.creator-card {
+  text-align: center;
+  padding: 20px 0;
+  height: 100%;
+  transition: transform 0.3s ease;
+  box-shadow: var(--card-shadow) !important;
+}
+
+.creator-card:hover {
+  transform: translateY(-5px);
+}
+
+.creator-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.creator-avatar {
+  width: 80px !important;
+  height: 80px !important;
+  margin-bottom: 16px !important;
+  background-color: var(--primary-color) !important;
+  font-size: 2rem !important;
+}
+
+.creator-name {
+  margin-bottom: 4px !important;
+  font-weight: 600 !important;
+}
+
+.creator-role {
+  color: #6c757d;
+}
+
+/* Features Section */
+.features-background {
+  background-color: #f8f9fa;
+}
+
+.features-grid {
+  margin-top: 20px;
+}
+
+.feature-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--card-shadow) !important;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card-content {
+  padding: 30px !important;
+  flex-grow: 1;
+}
+
+.feature-icon {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-title {
+  margin-bottom: 16px !important;
+  font-weight: 600 !important;
+  text-align: center;
+}
+
+.feature-description {
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 20px !important;
+}
+
+/* Video Container */
+.video-container {
+  margin: 0 16px 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow) !important;
+}
+
+.video-placeholder {
+  background-color: #e9ecef;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #6c757d;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 960px) {
+  .company-name {
+    font-size: 2rem !important;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .company-name {
+    font-size: 1.8rem !important;
+  }
+
+  .hero-section {
+    padding: 30px 0;
+  }
+
+  .header-button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}

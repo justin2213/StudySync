@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.modal-backdrop {
+  z-index: 1050 !important;
+  background-color: rgba(0, 0, 0, 0.5) !important; 
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fc-daygrid-day-number {
+  color: black;
+  text-decoration: none;
+}
+
+.fc-col-header-cell a {
+  color: black;
+  text-decoration: none;
+  font-weight: 400 !important;
+}
+
+.fc-daygrid-event .fc-event-main {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  display: block !important;
+}
+
+.fc-daygrid-event-dot {
+  display: none !important;
+}
+
+.fc-daygrid-event .fc-event-time {
+  margin-right: 4px !important;
+}
+
+.fc-day-today {
+  background-color: #f0f0f0 !important;
+}
+
+.dashboard-calendar .fc-day-today {
+  background-color: white !important;
+}
+
+.dashboard-calendar :is(
+  .fc-col-header-cell,
+  .fc-col-header-cell-cushion,
+  .fc-timegrid-col-header-cell,
+  .fc-timegrid-col-header-cell-cushion,
+  .fc-scrollgrid-section-header
+) {
+  background-color: #4652b7 !important;
+  color:            white   !important;
+}
+
+.dashboard-calendar :is(
+  .fc-timegrid-axis,
+  .fc-timegrid-axis-cushion
+) {
+  background-color: #e0e0e0 !important;
+}
+
+.fc .fc-timegrid-axis-cushion {
+  flex-shrink: 2;
+  max-width: 60px;
+  font-size: 12px;
+}
+
+.loading-indicator {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.dot {
+  margin: 0 5px;
+  animation: bounce 1.4s infinite;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+}
